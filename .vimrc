@@ -88,3 +88,8 @@ noremap <c-x><c-s> i\scheme{<Esc>l%a}<Esc>
 noremap <c-o> 0i\schemedisplay<CR><Esc>
 " ^P insert \endschemedisplay
 noremap <c-p> o\endschemedisplay<Esc>
+
+" ] reformats the current sentence
+noremap ] gw))
+" [ reformats the current paragraph
+noremap [ gw}}
