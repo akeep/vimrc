@@ -677,3 +677,5 @@ syn keyword schemeVar bytevector-u8-ref get-bytevector-n cadddr
 set lisp
 set autoindent
 let b:current_syntax = "scheme"
+
+set lispwords=!if,or,and
