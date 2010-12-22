@@ -80,18 +80,25 @@ syn region schemeStrucRestricted matchgroup=Delimiter start="#\[" matchgroup=Del
 
 syn region schemeUnquote matchgroup=Delimiter start="," end=![ \t\[\]()";]!me=e-1 contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
 syn region schemeUnquote matchgroup=Delimiter start=",@" end=![ \t\[\]()";]!me=e-1 contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
-
 syn region schemeUnquote matchgroup=Delimiter start=",(" end=")" contains=ALL
 syn region schemeUnquote matchgroup=Delimiter start=",@(" end=")" contains=ALL
-
 syn region schemeUnquote matchgroup=Delimiter start=",#(" end=")" contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
 syn region schemeUnquote matchgroup=Delimiter start=",@#(" end=")" contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
-
 syn region schemeUnquote matchgroup=Delimiter start=",\[" end="\]" contains=ALL
 syn region schemeUnquote matchgroup=Delimiter start=",@\[" end="\]" contains=ALL
-
 syn region schemeUnquote matchgroup=Delimiter start=",#\[" end="\]" contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
 syn region schemeUnquote matchgroup=Delimiter start=",@#\[" end="\]" contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
+
+syn region schemeUnquote matchgroup=Delimiter start="#," end=![ \t\[\]()";]!me=e-1 contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
+syn region schemeUnquote matchgroup=Delimiter start="#,@" end=![ \t\[\]()";]!me=e-1 contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
+syn region schemeUnquote matchgroup=Delimiter start="#,(" end=")" contains=ALL
+syn region schemeUnquote matchgroup=Delimiter start="#,@(" end=")" contains=ALL
+syn region schemeUnquote matchgroup=Delimiter start="#,#(" end=")" contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
+syn region schemeUnquote matchgroup=Delimiter start="#,@#(" end=")" contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
+syn region schemeUnquote matchgroup=Delimiter start="#,\[" end="\]" contains=ALL
+syn region schemeUnquote matchgroup=Delimiter start="#,@\[" end="\]" contains=ALL
+syn region schemeUnquote matchgroup=Delimiter start="#,#\[" end="\]" contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
+syn region schemeUnquote matchgroup=Delimiter start="#,@#\[" end="\]" contains=ALLBUT,schemeString,schemeStruc,schemeKwd,schemeVar
 
 " R5RS Scheme Functions and Syntax:
 
