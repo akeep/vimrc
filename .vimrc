@@ -42,16 +42,6 @@ set nohlsearch
 " incremental search
 set noincsearch
 
-" set our tabstops
-set tabstop=8
-
-" expand tabs
-set expandtab
-
-" set our soft tab stop
-set softtabstop=2
-set shiftwidth=2
-
 " only valid in hacked version of vim
 set yankleavecursor=1
 
