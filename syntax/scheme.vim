@@ -678,4 +678,8 @@ set lisp
 set autoindent
 let b:current_syntax = "scheme"
 
+" expand tabs
+set expandtab
+
+" valid only in hacked version: ! means treat "all but" these as lispwords
 set lispwords=!if,or,and
