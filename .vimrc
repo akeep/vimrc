@@ -42,6 +42,9 @@ set nohlsearch
 " incremental search
 set noincsearch
 
+" set indentation width for C
+set shiftwidth=2
+
 " only valid in hacked version of vim
 set yankleavecursor=1
 
@@ -60,6 +63,8 @@ colorscheme desert
 
 " turn on the ruler
 set ruler
+
+" set shiftwidth
 
 " Key mappings
 
