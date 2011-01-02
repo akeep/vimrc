@@ -18,3 +18,5 @@ set novisualbell
 set noerrorbells
 set vb t_vb=
 
+" stop the cursor from blinking
+set guicursor+=a:blinkon0
