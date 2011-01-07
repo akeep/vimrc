@@ -689,4 +689,4 @@ let b:current_syntax = "scheme"
 set expandtab
 
 " valid only in hacked version: ! means treat "all but" these as lispwords
-set lispwords=!if,or,and
+set lispwords=!if,or,and,+,-,*,/,<,=,>
