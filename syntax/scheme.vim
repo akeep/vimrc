@@ -683,6 +683,7 @@ syn keyword schemeVar bytevector-u8-ref get-bytevector-n cadddr
 
 set lisp
 set autoindent
+set nocindent
 let b:current_syntax = "scheme"
 
 " expand tabs
