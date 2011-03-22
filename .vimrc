@@ -18,6 +18,10 @@ set nofoldenable
 " turn off vi compatibility mode
 set nocompatible
 
+" turn off wrapping and setup line continuation character
+set nowrap
+set listchars+=precedes:<,extends:>
+
 " turn off file type plugin
 filetype plugin off
 
