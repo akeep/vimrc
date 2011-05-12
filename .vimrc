@@ -94,6 +94,6 @@ noremap <c-p> o\endschemedisplay<Esc>
 noremap <c-i> v%=
 
 " ] reformats the current sentence
-noremap ] gw))
+noremap ] !)fmt<CR>)
 " [ reformats the current paragraph
-noremap [ gw}}
+noremap [ !}fmt<CR>}
