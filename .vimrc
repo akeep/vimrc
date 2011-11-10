@@ -68,7 +68,9 @@ colorscheme desert
 " turn on the ruler
 set ruler
 
-" set shiftwidth
+" set e to find & set find path
+cabbrev e find
+set path=.,../c,../s,../mats
 
 " Key mappings
 

@@ -144,6 +144,8 @@ syn region schemeStruc matchgroup=Delimiter start="#\[" matchgroup=Delimiter end
 
 syn match schemeComment "[^#];.*$"
 syn match schemeComment "^;.*$"
+syn match schemeCommentNB "[^#];* NB.*$"
+syn match schemeCommentNB "^;* NB.*$"
 syn region schemeMultilineComment start="#|" end="|#" contains=schemeMultilineComment
 
 " Datum comments (treated structured ones as ordinary non-quoted lists)
@@ -189,6 +191,7 @@ if version >= 508 || !exists("did_scheme_syntax_inits")
   HiLink schemeConstant		Constant
 
   HiLink schemeComment		Comment
+  HiLink schemeCommentNB	CommentNB
   HiLink schemeMultilineComment	Comment
   HiLink schemeError		Error
 
@@ -690,4 +693,4 @@ let b:current_syntax = "scheme"
 set expandtab
 
 " valid only in hacked version: ! means treat "all but" these as lispwords
-set lispwords=!if,or,and,+,-,*,/,<,=,>
+set lispwords=!if,or,and,%if,+,-,*,/,<,=,>
