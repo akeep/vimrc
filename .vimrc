@@ -50,7 +50,7 @@ set noincsearch
 set shiftwidth=2
 
 " only valid in hacked version of vim
-set yankleavecursor=1
+" set yankleavecursor=1
 
 " special case various file types
 autocmd FileType make set noexpandtab
@@ -69,8 +69,8 @@ colorscheme desert
 set ruler
 
 " set e to find & set find path
-cabbrev e find
-set path=.,../c,../s,../mats
+" cabbrev e find
+" set path=.,../c,../s,../mats
 
 " Key mappings
 
