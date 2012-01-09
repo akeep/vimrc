@@ -1,0 +1,17 @@
+Vim RC Files
+=============
+
+The .vim and .gvimrc, along with an updated version of the scheme.vim syntax
+file to make vim a little more usable with Chez Scheme.
+
+We have two hacks to the VIM source that are not part of this repository:
+
+1. In order to act more like a traditional Vi, we added a yankleavecursor
+   option that puts the cursor back after you have yanked some lines of code,
+   rather then leaving it at the point that you yanked too.  I have this
+   commented out in the .vimrc file.
+2. In order to force VIM to default to indent by two for _all_ identifiers, we
+   have essentially stripped the smarts out of lisp mode, and reversed the meaning
+   of the lispwords (as noted by the !).  It now treats _all_ words as lispwords
+   except those listed, which it indents so that it lines up under the first
+   argument (this is useful for things like if that should work this way).
